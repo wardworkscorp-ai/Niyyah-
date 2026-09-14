@@ -33,14 +33,10 @@ jobs:
         run: npx expo-doctor
 
       - name: Link Expo project
-        env:
-          EXPO_TOKEN: ${{ secrets.EXPOTOKEN }}
-        run: eas init --non-interactive --force
+        run: EXPO_TOKEN="${{ secrets.EXPOTOKEN }}" eas init --non-interactive --force
 
       - name: Build installable Android APK
-        env:
-          EXPO_TOKEN: ${{ secrets.EXPOTOKEN }}
-        run: eas build --platform android --profile preview --non-interactive --wait --json > build-result.json
+        run: EXPO_TOKEN="${{ secrets.EXPOTOKEN }}" eas build --platform android --profile preview --non-interactive --wait --json > build-result.json
 
       - name: Download APK
         run: |
