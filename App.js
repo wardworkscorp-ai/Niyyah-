@@ -1,6 +1,14 @@
 import React,{useState}from'react';
 import{SafeAreaView,View,Text,Pressable,ScrollView,StyleSheet,TextInput,useColorScheme,StatusBar}from'react-native';
-import{Ionicons}from'@expo/vector-icons';
+const ICONS={
+  'person-circle-outline':'●','heart-outline':'♡','sparkles-outline':'✦','leaf-outline':'◌',
+  'moon-outline':'☾','book-outline':'▤','barbell-outline':'↔','checkmark':'✓',
+  'checkmark-circle':'✓','ellipse-outline':'○','calculator-outline':'#',
+  'notifications-outline':'◉','language-outline':'文','lock-closed-outline':'◆',
+  'contrast-outline':'◐','chevron-forward':'›','home-outline':'⌂',
+  'checkmark-done-outline':'✓','timer-outline':'◷','journal-outline':'▤'
+};
+function Ionicons({name,size=20,color}){return <Text style={{fontSize:size,color,lineHeight:size+3}}>{ICONS[name]||'•'}</Text>}
 
 const themes={
  light:{bg:'#F6F4EE',card:'#FFFFFF',ink:'#13251C',muted:'#6F776F',line:'#E5E7E2',green:'#1F6B4A',soft:'#DCEBE3'},
