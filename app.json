@@ -2,9 +2,8 @@
   "expo": {
     "name": "Niyyah",
     "slug": "niyyah-productivity",
-    "version": "0.1.1",
-    "jsEngine": "jsc",
-    "newArchEnabled": false,
+    "version": "0.1.2",
+    "newArchEnabled": true,
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -12,10 +11,7 @@
     },
     "android": {
       "package": "com.niyyah.productivity",
-      "versionCode": 2
-    },
-    "plugins": [
-      "expo-font"
-    ]
+      "versionCode": 3
+    }
   }
 }
