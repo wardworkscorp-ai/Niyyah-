@@ -1,13 +1,21 @@
 {
   "expo": {
-    "name":"Niyyah",
-    "slug":"niyyah-productivity",
-    "version":"0.1.0",
-    "jsEngine":"jsc",
-    "orientation":"portrait",
-    "userInterfaceStyle":"automatic",
-    "splash":{"backgroundColor":"#F6F4EE"},
-    "android":{"package":"com.niyyah.productivity","versionCode":1},
-    "plugins":["expo-font"]
+    "name": "Niyyah",
+    "slug": "niyyah-productivity",
+    "version": "0.1.1",
+    "jsEngine": "jsc",
+    "newArchEnabled": false,
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#F6F4EE"
+    },
+    "android": {
+      "package": "com.niyyah.productivity",
+      "versionCode": 2
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
